@@ -396,8 +396,8 @@ export default function Home() {
               <div className="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
                 {/* FEATURE CARD 1 */}
                 <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
-                  <span className="mb-4 inline-block p-3 rounded-lg bg-yellow-800">
-                    <svg
+                  <span className="mb-4 inline-block p-3 rounded-lg bg-yellow-100">
+                    {/* <svg
                       className="w-10 h-10 text-yellow-500"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -410,7 +410,8 @@ export default function Home() {
                         strokeWidth={2}
                         d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                       />
-                    </svg>
+                    </svg> */}
+                    <img src='/assets/images/crypto-cycle.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Earn From Your Order Flow
@@ -423,18 +424,19 @@ export default function Home() {
                 </div>
                 {/* FEATURE CARD 2 */}
                 <div className="py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
-                  <span className="mb-4 inline-block p-3 rounded-lg bg-pink-800">
-                    <svg
+                  <span className="mb-4 inline-block p-3 rounded-lg bg-pink-200">
+                    {/* <svg
                       className="w-10 h-10 text-pink-500"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
                       <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                    </svg>
+                    </svg> */}
+                    <img src='/assets/images/secure.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
-                    Some copied reworded text from competitor!
+                    MEV Protection
                   </h4>
                   <p className="text-gray-500 leading-loose">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -444,8 +446,8 @@ export default function Home() {
               <div className="w-full md:w-1/2 lg:mt-20 px-4">
                 {/* FEATURE CARD 3 */}
                 <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
-                  <span className="mb-4 inline-block p-3 rounded bg-blue-800">
-                    <svg
+                  <span className="mb-4 inline-block p-3 rounded bg-blue-200">
+                    {/* <svg
                       className="w-10 h-10 text-blue-500"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -458,10 +460,11 @@ export default function Home() {
                         strokeWidth={2}
                         d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                       />
-                    </svg>
+                    </svg> */}
+                    <img src='/assets/images/settings.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
-                    Some copied reworded text from competitor!
+                    Incredibly Simple Integration
                   </h4>
                   <p className="text-gray-500 leading-loose">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -469,8 +472,8 @@ export default function Home() {
                 </div>
                 {/* FEATURE CARD 4 */}
                 <div className="py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
-                  <span className="mb-4 inline-block p-3 rounded bg-purple-800">
-                    <svg
+                  <span className="mb-4 inline-block p-3 rounded bg-purple-200">
+                    {/* <svg
                       className="w-10 h-10 text-purple-500"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
@@ -482,10 +485,11 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                       <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                    </svg>
+                    </svg> */}
+                    <img src='/assets/images/blockchain-lines.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
-                    Some copied reworded text from competitor!
+                    Instant Tx Propagation
                   </h4>
                   <p className="text-gray-500 leading-loose">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -543,7 +547,7 @@ export default function Home() {
         <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
           <img
             className="rounded-3xl md:rounded-6xl md:rounded-br-none"
-            src="https://images.unsplash.com/photo-1572521165329-b197f9ea3da6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            src="/assets/images/3-set-diagram.png"
             alt=""
           />
           <div className="absolute inset-0 flex items-center justify-center"></div>
