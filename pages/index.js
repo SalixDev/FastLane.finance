@@ -31,8 +31,8 @@ export default function Home() {
       <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
         <a className="text-3xl font-bold leading-none justify-center items-center flex h-12" href="#">
           <img
-            className="h-12 hover:h-[2.85rem] transition-all duration-200"
-            src="/assets/logos/PFL/PFL-purple-black.svg"
+            className="h-12 hover:h-[2.9rem] hover:ml-1 transition-all duration-300"
+            src="/assets/ui-assets/logos/PFL/PFL-purple-black.svg"
             alt="PFL logo"
             width="auto"
           />
@@ -131,7 +131,7 @@ export default function Home() {
                   </p>
                   <div>
                     <a
-                      className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+                      className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
                       href="#"
                     >
                       Get Started
@@ -176,7 +176,7 @@ export default function Home() {
             <a className="mr-auto text-3xl font-bold leading-none" href="#">
               <img
                 className="h-10"
-                src="/assets/logos/PFL/PFL-purple-black.svg"
+                src="/assets/ui-assets/logos/PFL/PFL-purple-black.svg"
                 alt=""
                 width="auto"
               />
@@ -251,7 +251,7 @@ export default function Home() {
                 Sign In
               </a>
               <a
-                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl"
+                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-purple-600 hover:bg-purple-800 rounded-l-xl rounded-t-xl"
                 href="#"
               >
                 Sign Up
@@ -262,13 +262,13 @@ export default function Home() {
             </p>
             <div className="text-center">
               <a className="inline-block px-1" href="#">
-                <img src="/assets/logos/social/facebook-purple.svg" alt="" />
+                <img src="/assets/ui-assets/logos/social/facebook-purple.svg" alt="" />
               </a>
               <a className="inline-block px-1" href="#">
-                <img src="/assets/logos/social/twitter-purple.svg" alt="" />
+                <img src="/assets/ui-assets/logos/social/twitter-purple.svg" alt="" />
               </a>
               <a className="inline-block px-1" href="#">
-                <img src="/assets/logos/social/instagram-purple.svg" alt="" />
+                <img src="/assets/ui-assets/logos/social/instagram-purple.svg" alt="" />
               </a>
             </div>
           </div>
@@ -277,7 +277,7 @@ export default function Home() {
 
     </section>
     {/* STATS */}
-    <section className="pt-10 pb-0">
+    <section className="pt-5">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-center">
           <div className="mb-8 w-full md:w-1/2 lg:w-1/4">
@@ -310,25 +310,7 @@ export default function Home() {
 
     {/* FEATURES  */}
     <section>
-      {/* <div className="skew skew-top mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-top ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
-        </svg>
-      </div> */}
-      <div className="pt-12 bg-gray-900 radius-for-skewed">
+      <div className="pt-8 bg-gray-900 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center">
             <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
@@ -357,7 +339,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Vestibulum viverra ante non libero</span>
+                    <span>Does not censor any transaction</span>
                   </li>
                   <li className="flex mb-4">
                     <svg
@@ -372,7 +354,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Morbi mollis metus pretium ultrices tincidunt</span>
+                    <span>Incurs no transaction delay beyond the limit of what is already possible.</span>
                   </li>
                   <li className="flex mb-4">
                     <svg
@@ -387,7 +369,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Etiam lectus nunc, commodo et risus in</span>
+                    <span>Reduces the economic incentive for spam during the sprints of participating validators.</span>
                   </li>
                 </ul>
               </div>
@@ -397,21 +379,7 @@ export default function Home() {
                 {/* FEATURE CARD 1 */}
                 <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded-lg bg-yellow-100">
-                    {/* <svg
-                      className="w-10 h-10 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg> */}
-                    <img src='/assets/images/crypto-cycle.svg' className='h-11 w-11'></img>
+                    <img src='/assets/ui-assets/icons/crypto-cycle.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Earn From Your Order Flow
@@ -425,15 +393,7 @@ export default function Home() {
                 {/* FEATURE CARD 2 */}
                 <div className="py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded-lg bg-pink-200">
-                    {/* <svg
-                      className="w-10 h-10 text-pink-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                    </svg> */}
-                    <img src='/assets/images/secure.svg' className='h-11 w-11'></img>
+                    <img src='/assets/ui-assets/icons/secure.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     MEV Protection
@@ -447,21 +407,7 @@ export default function Home() {
                 {/* FEATURE CARD 3 */}
                 <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded bg-blue-200">
-                    {/* <svg
-                      className="w-10 h-10 text-blue-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg> */}
-                    <img src='/assets/images/settings.svg' className='h-11 w-11'></img>
+                    <img src='/assets/ui-assets/icons/settings.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Incredibly Simple Integration
@@ -473,20 +419,7 @@ export default function Home() {
                 {/* FEATURE CARD 4 */}
                 <div className="py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded bg-purple-200">
-                    {/* <svg
-                      className="w-10 h-10 text-purple-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
-                        clipRule="evenodd"
-                      />
-                      <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                    </svg> */}
-                    <img src='/assets/images/blockchain-lines.svg' className='h-11 w-11'></img>
+                    <img src='/assets/ui-assets/icons/blockchain-lines.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Instant Tx Propagation
@@ -500,37 +433,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="skew skew-bottom mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-bottom ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 10 10" />
-        </svg>
-      </div>
     </section>
 
     {/* SINGULAR PRODUCT IMAGE */}
-    <section className="pb-56 sm:pb-72 bg-gray-50">
-      <div className="relative pt-12 md:pt-16 pb-32 md:pb-64 bg-gray-900 border-b-4 border-purple-600">
+    <section className="sm:pb-128 lg:pb-96 bg-gray-50">
+      <div className="relative pt-12 md:pt-16 pb-32 md:pb-72 bg-gray-900 border-b-4 border-purple-600">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
-            <h2 className="mb-10 text-3xl lg:text-4xl text-gray-50 font-bold">
+          <div className="max-w-2xl mx-auto text-center mb-8 md:mb-8">
+            <h2 className="mb-4 text-3xl lg:text-4xl text-gray-50 font-bold">
               Learn what's possible with Fast Lane 
             </h2>
             <div>
               <a
-                className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+                className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
                 Get Started
@@ -545,36 +460,79 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
-          <img
-            className="rounded-3xl md:rounded-6xl md:rounded-br-none"
-            src="/assets/images/3-set-diagram.png"
-            alt=""
-          />
-          <div className="absolute inset-0 flex items-center justify-center"></div>
+
+            {/* product image */}
+            <div className="pt-8 pb-4 px-5 bg-gray-200 radius-for-skewed rounded-3xl">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-wrap -mx-4">
+                  <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
+                    <div className="max-w-md">
+                      <div className="text-purple-600 font-bold text-center">
+                        Dolor sit amet consectutar
+                      </div>
+                      <h2 className="text-3xl lg:text-4xl font-bold font-heading leading-snug py-4 text-center">
+                        Build &amp; Launch without problems
+                      </h2>
+                      <p className="lg:mb-10 md:mb-6  text-gray-500 leading-loose text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque efficitur nisl sodales egestas lobortis.
+                      </p>
+                      <div className="flex flex-wrap justify-center">
+                        {/* <div className="mb-8 w-full lg:w-1/2">
+                          <h4 className="text-gray-500">Total Revenue</h4>
+                          <span className="text-3xl lg:text-4xl font-bold">$33,261</span>
+                        </div>
+                        <div className="mb-8 w-full lg:w-1/2">
+                          <h4 className="text-gray-500">Subscribers</h4>
+                          <span className="text-3xl lg:text-4xl font-bold">481,095</span>
+                        </div> */}
+                                            <a
+                      className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-3 lg:px-14 md:w-1/2 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200 flex justify-center"
+                      href="#"
+                    >
+                      Get Started
+                    </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap items-center justify-center w-full lg:w-1/2 px-4">
+                    <div className="w-full xl:w-auto order-0 xl:order-1">
+                      <img
+                        className="mx-auto mb-8 xl:mb-0"
+                        src="/assets/ui-assets/images/book-detail-full.png"
+                        alt=""
+                      />
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="skew skew-bottom mr-for-radius">
+              <svg
+                className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+                viewBox="0 0 10 10"
+                preserveAspectRatio="none"
+              >
+                <polygon fill="currentColor" points="0 0 10 0 0 10" />
+              </svg>
+            </div>
+            <div className="skew skew-bottom ml-for-radius">
+              <svg
+                className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+                viewBox="0 0 10 10"
+                preserveAspectRatio="none"
+              >
+                <polygon fill="currentColor" points="0 0 10 0 10 10" />
+              </svg>
+            </div>
+
         </div>
       </div>
     </section>
 
     {/* HOW IT WORKS | 3 STEPS */}
     <section>
-      {/* <div className="skew skew-top mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-top ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
-        </svg>
-      </div> */}
       <div className="pb-20 bg-gray-50 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="mb-20 max-w-md text-center mx-auto">
@@ -661,24 +619,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="skew skew-bottom mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-bottom ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 10 10" />
-        </svg>
-      </div> */}
     </section>
 
     {/* LOGO CONTAINERS */}
@@ -690,7 +630,7 @@ export default function Home() {
               <a href="#">
                 <img
                   className="mx-auto h-8"
-                  src="/assets/logos/brands/slack.png"
+                  src="/assets/ui-assets/logos/brands/slack.png"
                   alt=""
                 />
               </a>
@@ -701,7 +641,7 @@ export default function Home() {
               <a href="#">
                 <img
                   className="mx-auto h-8"
-                  src="/assets/logos/brands/dropbox.png"
+                  src="/assets/ui-assets/logos/brands/dropbox.png"
                   alt=""
                 />
               </a>
@@ -712,7 +652,7 @@ export default function Home() {
               <a href="#">
                 <img
                   className="mx-auto h-8"
-                  src="/assets/logos/brands/spotify.png"
+                  src="/assets/ui-assets/logos/brands/spotify.png"
                   alt=""
                 />
               </a>
@@ -723,7 +663,7 @@ export default function Home() {
               <a href="#">
                 <img
                   className="mx-auto h-8"
-                  src="/assets/logos/brands/stripe.png"
+                  src="/assets/ui-assets/logos/brands/stripe.png"
                   alt=""
                 />
               </a>
@@ -755,7 +695,7 @@ export default function Home() {
                 <div className="relative h-56 mx-auto rounded overflow-hidden">
                   <img
                     className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
-                    src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80"
+                    src="/assets/ui-assets/images/one-block-lg.png"
                     alt=""
                   />
                   <div className="absolute inset-0 bg-gray-900 opacity-75 rounded transition-all group-hover:bg-gray-800" />
@@ -777,7 +717,7 @@ export default function Home() {
                 <div className="relative mx-auto rounded h-96 overflow-hidden">
                   <img
                     className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
-                    src="https://images.unsplash.com/photo-1413752362258-7af2a667b590?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80"
+                    src="/assets/ui-assets/images/zoomed-in-bc.png"
                     alt=""
                   />
                   <div className="absolute inset-0 bg-gray-900 opacity-75 rounded transition-all group-hover:bg-gray-800" />
@@ -799,7 +739,7 @@ export default function Home() {
                 <div className="relative mx-auto rounded-lg h-96 overflow-hidden">
                   <img
                     className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
-                    src="https://images.unsplash.com/photo-1459213599465-03ab6a4d5931?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1055&q=80"
+                    src="/assets/ui-assets/images/zoomed-in-bc.png"
                     alt=""
                   />
                   <div className="absolute inset-0 bg-gray-900 opacity-75 rounded group-hover:bg-gray-800" />
@@ -821,11 +761,11 @@ export default function Home() {
     <div className="py-0 bg-gray-50 radius-for-skewed">
       <div className="container mx-auto px-0">
         <div className="flex flex-wrap flex-col">
-          <a href='https://twitter.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600">
+          <a href='https://twitter.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600 duration-300">
               <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow rounded">
                 <div>
                   <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
-                    <img src="/assets/logos/social/Twitter-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10 " ></img>
+                    <img src="/assets/ui-assets/logos/social/Twitter-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10 " ></img>
                   </span>
                 </div>
                 <div className="w-full lg:w-2/3">
@@ -839,11 +779,11 @@ export default function Home() {
               </div>
             </a>
 
-            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600">
+            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600 duration-300">
               <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow rounded">
                 <div>
                   <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
-                    <img src="/assets/logos/social/Github-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
+                    <img src="/assets/ui-assets/logos/social/Github-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
                   </span>
                 </div>
                 <div className="w-full lg:w-2/3">
@@ -857,11 +797,11 @@ export default function Home() {
               </div>
             </a>
             
-            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600">
+            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600 duration-300">
               <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow rounded">
                 <div>
                 <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
-                    <img src="/assets/logos/social/Discord-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
+                    <img src="/assets/ui-assets/logos/social/Discord-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
                   </span>
                 </div>
                 <div className="w-full lg:w-2/3">
@@ -897,7 +837,7 @@ export default function Home() {
               Pellentesque efficitur nisl sodales egestas lobortis.
             </p>
             <a
-              className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200"
+              className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-800 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200"
               href="#"
             >
               Integrate With Us
@@ -1182,8 +1122,8 @@ export default function Home() {
       </div>
       <div className="footer-bg relative py-20 bg-gray-900 radius-for-skewed overflow-hidden" >
       <img
-            className="h-128 absolute opacity-10 top-0 mt-[-2rem] ml-[-12rem] md:inline hidden"
-            src='/assets/images/lines-horizontal.svg'
+            className="h-128 absolute opacity-5 top-0 mt-[-2rem] ml-[-12rem] md:inline hidden"
+            src='/assets/ui-assets/images/lines-horizontal.svg'
             alt="tech-lines"
             width="auto"
           />
@@ -1196,7 +1136,7 @@ export default function Home() {
               >
                 <img
                   className="h-12"
-                  src="/assets/logos/PFL/PFL-purple-white.svg"
+                  src="/assets/ui-assets/logos/PFL/PFL-purple-white.svg"
                   alt=""
                   width="auto"
                 />
@@ -1215,7 +1155,7 @@ export default function Home() {
               </div>
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">
                 <h5 className="mb-4 font-bold text-gray-50">Contacts</h5>
-                <p className="text-gray-400">hello@MEVFastLane.com</p>
+                <p className="text-gray-400">hello@fastlane.finance</p>
               </div>
             </div>
           </div>
@@ -1226,35 +1166,17 @@ export default function Home() {
             {/* if we want social media 
             <div class="flex space-x-2 lg:space-x-4">
           <a href="#">
-            <img src="assets/logos/social/facebook-purple.svg" alt="">
+            <img src="assets/ui-assets/logos/social/facebook-purple.svg" alt="">
           </a>
           <a href="#">
-            <img src="assets/logos/social/twitter-purple.svg" alt="">
+            <img src="assets/ui-assets/logos/social/twitter-purple.svg" alt="">
           </a>
           <a href="#">
-            <img src="assets/logos/social/instagram-purple.svg" alt="">
+            <img src="assets/ui-assets/logos/social/instagram-purple.svg" alt="">
           </a>
         </div> */}
           </div>
         </div>
-      </div>
-      <div className="skew skew-bottom mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-bottom ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 10 10" />
-        </svg>
       </div>
     </section>
   </div>
