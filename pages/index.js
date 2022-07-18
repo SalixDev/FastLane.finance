@@ -29,9 +29,9 @@ export default function Home() {
     {/* HEADER INTRO */}
     <section className="skewed-bottom-right">
       <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
-        <a className="text-3xl font-bold leading-none" href="#">
+        <a className="text-3xl font-bold leading-none justify-center items-center flex h-12" href="#">
           <img
-            className="h-12"
+            className="h-12 hover:h-[2.85rem] transition-all duration-200"
             src="/assets/logos/PFL/PFL-purple-black.svg"
             alt="PFL logo"
             width="auto"
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
+            <a className="text-sm text-gray-400 hover:text-gray-600 duration-500" href="#">
               Start
             </a>
           </li>
@@ -93,7 +93,7 @@ export default function Home() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
+            <a className="text-sm text-gray-400 hover:text-gray-600 duration-500" href="#">
               Documentation
             </a>
           </li>
@@ -118,14 +118,14 @@ export default function Home() {
             <div className="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
               <div className="w-full text-center lg:text-left">
                 <div className="max-w-md mx-auto lg:mx-0">
-                  <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
+                  <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading leading-snug">
                     <span>Introducing the</span>
                     <span className="text-purple-600"> Fast Lane </span>
                     <span>on Polygon</span>
                   </h2>
                 </div>
                 <div className="max-w-sm mx-auto lg:mx-0">
-                  <p className="mb-6 text-gray-400 leading-loose">
+                  <p className="mb-6 text-gray-400 leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pellentesque efficitur nisl sodales egestas lobortis.
                   </p>
@@ -310,7 +310,7 @@ export default function Home() {
 
     {/* FEATURES  */}
     <section>
-      <div className="skew skew-top mr-for-radius">
+      {/* <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
           viewBox="0 0 10 10"
@@ -327,8 +327,8 @@ export default function Home() {
         >
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
-      </div>
-      <div className="py-20 bg-gray-900 radius-for-skewed">
+      </div> */}
+      <div className="pt-12 bg-gray-900 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center">
             <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
@@ -395,7 +395,7 @@ export default function Home() {
             <div className="w-full lg:w-1/2 flex flex-wrap -mx-4">
               <div className="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
                 {/* FEATURE CARD 1 */}
-                <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
+                <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded-lg bg-yellow-100">
                     {/* <svg
                       className="w-10 h-10 text-yellow-500"
@@ -423,7 +423,7 @@ export default function Home() {
                   </p>
                 </div>
                 {/* FEATURE CARD 2 */}
-                <div className="py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
+                <div className="py-6 pl-6 pr-4 shadow-md rounded bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded-lg bg-pink-200">
                     {/* <svg
                       className="w-10 h-10 text-pink-500"
@@ -445,7 +445,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/2 lg:mt-20 px-4">
                 {/* FEATURE CARD 3 */}
-                <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
+                <div className="mb-8 py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded bg-blue-200">
                     {/* <svg
                       className="w-10 h-10 text-blue-500"
@@ -471,7 +471,7 @@ export default function Home() {
                   </p>
                 </div>
                 {/* FEATURE CARD 4 */}
-                <div className="py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600">
+                <div className="py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800 border-gray-800 border-[1px] hover:border-purple-600 transition-all duration-500">
                   <span className="mb-4 inline-block p-3 rounded bg-purple-200">
                     {/* <svg
                       className="w-10 h-10 text-purple-500"
@@ -521,12 +521,12 @@ export default function Home() {
     </section>
 
     {/* SINGULAR PRODUCT IMAGE */}
-    <section className="pb-56 sm:pb-80 bg-gray-50">
+    <section className="pb-56 sm:pb-72 bg-gray-50">
       <div className="relative pt-12 md:pt-16 pb-32 md:pb-64 bg-gray-900 border-b-4 border-purple-600">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
-            <h2 className="mb-10 text-4xl lg:text-5xl text-gray-50 font-bold">
-              Learn how we will help you to reach your goals
+            <h2 className="mb-10 text-3xl lg:text-4xl text-gray-50 font-bold">
+              Learn what's possible with Fast Lane 
             </h2>
             <div>
               <a
@@ -539,7 +539,7 @@ export default function Home() {
                 className="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold bg-gray-900 border-2 border-gray-700 hover:border-gray-600 rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
-                Further Documentation
+                Read Documentation
               </a>
             </div>
           </div>
@@ -557,7 +557,7 @@ export default function Home() {
 
     {/* HOW IT WORKS | 3 STEPS */}
     <section>
-      <div className="skew skew-top mr-for-radius">
+      {/* <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -574,8 +574,8 @@ export default function Home() {
         >
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
-      </div>
-      <div className="py-20 bg-gray-50 radius-for-skewed">
+      </div> */}
+      <div className="pb-20 bg-gray-50 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="mb-20 max-w-md text-center mx-auto">
             <span className="text-purple-600 font-bold">
@@ -586,6 +586,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex flex-wrap -mx-4">
+            {/* step 1 */}
             <div className="mb-16 lg:mb-0 relative w-full md:w-1/2 lg:w-1/3 px-4">
               <svg
                 className="absolute top-0 left-0 -mt-10 ml-4 text-yellow-600"
@@ -609,6 +610,7 @@ export default function Home() {
                 Suspendisse potenti. Nulla non nibh feugiat.
               </p>
             </div>
+            {/* step 2 */}
             <div className="mb-16 lg:mb-0 relative w-full md:w-1/2 lg:w-1/3 px-4">
               <svg
                 className="absolute top-0 left-0 -mt-10 ml-4 text-blue-600"
@@ -632,6 +634,7 @@ export default function Home() {
                 Suspendisse potenti. Nulla non nibh feugiat.
               </p>
             </div>
+            {/* step 3 */}
             <div className="relative w-full md:w-1/2 lg:w-1/3 px-4">
               <svg
                 className="absolute top-0 left-0 -mt-10 ml-4 text-pink-600"
@@ -658,7 +661,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="skew skew-bottom mr-for-radius">
+      {/* <div className="skew skew-bottom mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -675,7 +678,7 @@ export default function Home() {
         >
           <polygon fill="currentColor" points="0 0 10 0 10 10" />
         </svg>
-      </div>
+      </div> */}
     </section>
 
     {/* LOGO CONTAINERS */}
