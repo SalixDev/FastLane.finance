@@ -21,7 +21,9 @@ export default function Home() {
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       />
     {/* <link rel="stylesheet" href="css/tailwind/tailwind.min.css" /> */}
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/FL-favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/FL-favicon-16x16.png" />
+
     </Head>
 
   <div className="antialiased bg-body text-body font-body">
@@ -30,7 +32,7 @@ export default function Home() {
     {/* HEADER INTRO */}
     <section className="skewed-bottom-right">
 
-      <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
+      <nav className="relative px-6 pt-6 flex justify-between items-center bg-gray-50">
         <a className="text-3xl font-bold leading-none justify-center items-center flex h-12" href="#">
           <img
             className="h-12 hover:h-[2.9rem] hover:ml-1 transition-all duration-300"
@@ -764,8 +766,8 @@ export default function Home() {
     <div className="py-0 bg-gray-50 radius-for-skewed">
       <div className="container mx-auto px-0">
         <div className="flex flex-wrap flex-col">
-          <a href='https://twitter.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600 duration-300">
-              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow rounded">
+          <a href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white">
+              <div className="p-5 flex flex-wrap bg-white group-hover:bg-purple-100 shadow rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                 <div>
                   <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
                     <img src="/assets/ui-assets/logos/social/Twitter-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10 " ></img>
@@ -782,8 +784,8 @@ export default function Home() {
               </div>
             </a>
 
-            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600 duration-300">
-              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow rounded">
+            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white">
+              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                 <div>
                   <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
                     <img src="/assets/ui-assets/logos/social/Github-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
@@ -800,8 +802,8 @@ export default function Home() {
               </div>
             </a>
             
-            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white hover:border-purple-600 duration-300">
-              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow rounded">
+            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white">
+              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                 <div>
                 <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
                     <img src="/assets/ui-assets/logos/social/Discord-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
