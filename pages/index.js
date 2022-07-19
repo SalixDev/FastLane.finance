@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Player } from '@lottiefiles/react-lottie-player';
+import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -23,17 +24,18 @@ export default function Home() {
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png" />
     </Head>
 
-    <div className="antialiased bg-body text-body font-body">
+  <div className="antialiased bg-body text-body font-body">
   <div className="">
 
     {/* HEADER INTRO */}
     <section className="skewed-bottom-right">
+
       <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
         <a className="text-3xl font-bold leading-none justify-center items-center flex h-12" href="#">
           <img
             className="h-12 hover:h-[2.9rem] hover:ml-1 transition-all duration-300"
-            src="/assets/ui-assets/logos/PFL/PFL-purple-black.svg"
-            alt="PFL logo"
+            src="/assets/ui-assets/logos/FL/FL-logo-BLK.svg"
+            alt="FL logo"
             width="auto"
           />
         </a>
@@ -152,7 +154,6 @@ export default function Home() {
                 loop
                 src="https://assets7.lottiefiles.com/packages/lf20_zjcthz6w.json"
                 // style={{ height: '670px', width: '670px' }}
-                // className="h-[800px] w-[800px]"
               >
               </Player>
             </div>
@@ -176,7 +177,7 @@ export default function Home() {
             <a className="mr-auto text-3xl font-bold leading-none" href="#">
               <img
                 className="h-10"
-                src="/assets/ui-assets/logos/PFL/PFL-purple-black.svg"
+                src="/assets/ui-assets/logos/FL/FL-logo-BLK.svg"
                 alt=""
                 width="auto"
               />
@@ -386,7 +387,7 @@ export default function Home() {
                   </h4>
                   <p className="text-gray-500 leading-loose">
                     Your new &amp; existing order flows will continue to
-                    generate MEV, but without PFL you're not gaining anything
+                    generate MEV, but without Fast Lane you're not gaining anything
                     from it.
                   </p>
                 </div>
@@ -436,8 +437,8 @@ export default function Home() {
     </section>
 
     {/* SINGULAR PRODUCT IMAGE */}
-    <section className="sm:pb-128 lg:pb-96 bg-gray-50">
-      <div className="relative pt-12 md:pt-16 pb-32 md:pb-72 bg-gray-900 border-b-4 border-purple-600">
+    <section className="sm:pb-128 lg:pb-60 bg-gray-50">
+      <div className="relative pt-12 md:pt-16 pb-32 md:pb-48 bg-gray-900 border-b-4 border-purple-600">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-8 md:mb-8">
             <h2 className="mb-4 text-3xl lg:text-4xl text-gray-50 font-bold">
@@ -462,7 +463,7 @@ export default function Home() {
         <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
 
             {/* product image */}
-            <div className="pt-8 pb-4 px-5 bg-gray-200 radius-for-skewed rounded-3xl">
+            <div className="pt-6 pb-4 px-5 bg-gray-50 hover:shadow-2xl radius-for-skewed rounded-3xl duration-500 border-purple-600 border-[3px]">
               <div className="container mx-auto px-4">
                 <div className="flex flex-wrap -mx-4">
                   <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
@@ -470,10 +471,10 @@ export default function Home() {
                       <div className="text-purple-600 font-bold text-center">
                         Dolor sit amet consectutar
                       </div>
-                      <h2 className="text-3xl lg:text-4xl font-bold font-heading leading-snug py-4 text-center">
-                        Build &amp; Launch without problems
+                      <h2 className="text-3xl lg:text-4xl font-bold font-heading leading-snug text-center">
+                        Integrate with only one command line
                       </h2>
-                      <p className="lg:mb-10 md:mb-6  text-gray-500 leading-loose text-center">
+                      <p className="lg:mb-4 md:mb-2  text-gray-500 leading-loose text-center">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Pellentesque efficitur nisl sodales egestas lobortis.
                       </p>
@@ -487,7 +488,7 @@ export default function Home() {
                           <span className="text-3xl lg:text-4xl font-bold">481,095</span>
                         </div> */}
                                             <a
-                      className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-3 lg:px-14 md:w-1/2 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200 flex justify-center"
+                      className="inline-block mb-3 lg:mb-3 lg:mr-3 w-full lg:w-auto py-3 lg:px-14 md:w-1/2 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200 flex justify-center"
                       href="#"
                     >
                       Get Started
@@ -496,12 +497,14 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex flex-wrap items-center justify-center w-full lg:w-1/2 px-4">
-                    <div className="w-full xl:w-auto order-0 xl:order-1">
-                      <img
-                        className="mx-auto mb-8 xl:mb-0"
-                        src="/assets/ui-assets/images/book-detail-full.png"
-                        alt=""
-                      />
+                    <div className="w-full xl:w-auto order-0 xl:order-1 -my-10">
+                      <Player
+                        autoplay
+                        loop
+                        src="https://assets5.lottiefiles.com/packages/lf20_p8jh9b5k.json"
+                        style={{ height: '400px', width: '400px' }}
+                      >
+                      </Player>
                     </div>
 
                   </div>
@@ -533,14 +536,14 @@ export default function Home() {
 
     {/* HOW IT WORKS | 3 STEPS */}
     <section>
-      <div className="pb-20 bg-gray-50 radius-for-skewed">
+      <div className="pb-14 bg-gray-50 radius-for-skewed">
         <div className="container mx-auto px-4">
-          <div className="mb-20 max-w-md text-center mx-auto">
+          <div className="mb-16 max-w-md text-center mx-auto">
             <span className="text-purple-600 font-bold">
               Launch the Fast Lane
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-              Incredibly simple implementation
+            <h2 className="text-3xl lg:text-4xl font-bold font-heading">
+              with incredibly simple implementation
             </h2>
           </div>
           <div className="flex flex-wrap -mx-4">
@@ -1102,53 +1105,35 @@ export default function Home() {
 
     {/* FOOTER */}
     <section>
-      <div className="skew skew-top mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-top ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
-        </svg>
-      </div>
-      <div className="footer-bg relative py-20 bg-gray-900 radius-for-skewed overflow-hidden" >
-      <img
+      <div className="footer-bg relative py-10 bg-gray-900 radius-for-skewed overflow-hidden" >
+      {/* <img
             className="h-128 absolute opacity-5 top-0 mt-[-2rem] ml-[-12rem] md:inline hidden"
             src='/assets/ui-assets/images/lines-horizontal.svg'
             alt="tech-lines"
             width="auto"
-          />
+          /> */}
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap mb-6 lg:mb-20">
-            <div className="mb-6 w-full lg:w-1/5">
+            <div className="mb-6  mr-4 w-full lg:w-1/5">
               <a
                 className="text-white text-3xl font-bold leading-none"
                 href="#"
               >
                 <img
-                  className="h-12"
-                  src="/assets/ui-assets/logos/PFL/PFL-purple-white.svg"
-                  alt=""
+                  className="h-12 hover:h-[2.7rem] hover:ml-[2px] hover:mt-[3px] transition-all duration-300"
+                  src="/assets/ui-assets/logos/FL/FL-logo-WHT.svg"
+                  alt="FastLane Logo"
                   width="auto"
                 />
               </a>
             </div>
-            <div className="mb-5 w-full lg:w-1/5">
+            <div className="mb-5 ml-6 w-full lg:w-1/5">
               <p className="text-gray-400 leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 luctus eget justo.
               </p>
             </div>
-            <div className="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
+            <div className="w-full lg:w-3/6 flex flex-wrap -mx-3 justify-end">
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold text-gray-50">Github</h5>
                 <p className="text-gray-400 leading-loose">/35sada9asndka</p>
@@ -1179,9 +1164,8 @@ export default function Home() {
         </div>
       </div>
     </section>
+    </div>
   </div>
 </div>
-</div>
-
   )
 }
