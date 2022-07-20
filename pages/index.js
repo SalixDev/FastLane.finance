@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Player } from '@lottiefiles/react-lottie-player';
 import Script from 'next/script';
+import TechLinesAnim from './lottie-animation'
 
 export default function Home() {
   return (
@@ -28,7 +29,6 @@ export default function Home() {
 
   <div className="antialiased bg-body text-body font-body">
   <div className="">
-
     {/* HEADER INTRO */}
     <section className="skewed-bottom-right">
 
@@ -219,7 +219,7 @@ export default function Home() {
                   About Us
                 </a>
               </li>
-              <li className="mb-1">
+               <li className="mb-1">
                 <a
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
                   href="#"
@@ -227,39 +227,10 @@ export default function Home() {
                   Services
                 </a>
               </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-                  href="#"
-                >
-                  Platform
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-                  href="#"
-                >
-                  Testimonials
-                </a>
-              </li>
             </ul>
           </div>
           <div className="mt-auto">
-            <div className="pt-6">
-              <a
-                className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
-                href="#"
-              >
-                Sign In
-              </a>
-              <a
-                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-purple-600 hover:bg-purple-800 rounded-l-xl rounded-t-xl"
-                href="#"
-              >
-                Sign Up
-              </a>
-            </div>
+
             <p className="my-4 text-xs text-center text-gray-400">
               <span>© 2022 All rights reserved.</span>
             </p>
@@ -324,14 +295,14 @@ export default function Home() {
                 <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading text-white">
                   Build &amp; Launch without problems
                 </h2>
-                <p className="mb-6 text-gray-500 leading-loose">
+                <p className="mb-6 text-gray-400 leading-loose">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque efficitur nisl sodales egestas lobortis.
                 </p>
-                <ul className="text-gray-500 font-bold">
+                <ul className="text-gray-400 font-bold">
                   <li className="flex mb-4">
                     <svg
-                      className="mr-2 w-6 h-6 text-green-400"
+                      className="mr-2 w-6 h-6 text-purple-300"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -346,7 +317,7 @@ export default function Home() {
                   </li>
                   <li className="flex mb-4">
                     <svg
-                      className="mr-2 w-6 h-6 text-green-400"
+                      className="mr-2 w-6 h-6 text-purple-300 flex-shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -359,9 +330,9 @@ export default function Home() {
                     </svg>
                     <span>Incurs no transaction delay beyond the limit of what is already possible.</span>
                   </li>
-                  <li className="flex mb-4">
+                  <li className="mb-4 flex">
                     <svg
-                      className="mr-2 w-6 h-6 text-green-400"
+                      className="mr-2 w-6 h-6 text-purple-300 flex-shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -372,7 +343,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Reduces the economic incentive for spam during the sprints of participating validators.</span>
+                    <span>reduce the economic incentive for transaction spam by removing the randomness from the direct vs announced propagation dynamic</span>
                   </li>
                 </ul>
               </div>
@@ -387,7 +358,7 @@ export default function Home() {
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Earn From Your Order Flow
                   </h4>
-                  <p className="text-gray-500 leading-loose">
+                  <p className="text-gray-400 leading-loose">
                     Your new &amp; existing order flows will continue to
                     generate MEV, but without Fast Lane you're not gaining anything
                     from it.
@@ -401,7 +372,7 @@ export default function Home() {
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     MEV Protection
                   </h4>
-                  <p className="text-gray-500 leading-loose">
+                  <p className="text-gray-400 leading-loose">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                 </div>
@@ -415,7 +386,7 @@ export default function Home() {
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Incredibly Simple Integration
                   </h4>
-                  <p className="text-gray-500 leading-loose">
+                  <p className="text-gray-400 leading-loose">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                 </div>
@@ -427,7 +398,7 @@ export default function Home() {
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
                     Instant Tx Propagation
                   </h4>
-                  <p className="text-gray-500 leading-loose">
+                  <p className="text-gray-400 leading-loose">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                 </div>
@@ -462,8 +433,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
+  
+        <div className='absolute opacity-50 right-0 top-0'>
+          <TechLinesAnim/>
+        </div>
 
+        <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
             {/* product image */}
             <div className="pt-6 pb-4 px-5 bg-gray-50 hover:shadow-2xl radius-for-skewed rounded-3xl duration-500 border-purple-600 border-[3px]">
               <div className="container mx-auto px-4">
@@ -766,7 +741,8 @@ export default function Home() {
     <div className="py-0 bg-gray-50 radius-for-skewed">
       <div className="container mx-auto px-0">
         <div className="flex flex-wrap flex-col">
-          <a href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white">
+
+          <a href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
               <div className="p-5 flex flex-wrap bg-white group-hover:bg-purple-100 shadow rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                 <div>
                   <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
@@ -784,7 +760,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded border-2 border-white">
+            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded z-10">
               <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                 <div>
                   <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
@@ -802,7 +778,7 @@ export default function Home() {
               </div>
             </a>
             
-            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded border-2 border-white">
+            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded z-10">
               <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                 <div>
                 <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
