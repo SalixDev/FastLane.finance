@@ -410,7 +410,7 @@ export default function Home() {
     </section>
 
     {/* SINGULAR PRODUCT IMAGE */}
-    <section className="sm:pb-128 lg:pb-60 bg-gray-50">
+    <section className="pb-160 lg:pb-60 bg-gray-50">
       <div className="relative pt-12 md:pt-16 pb-32 md:pb-48 bg-gray-900 border-b-4 border-purple-600">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-8 md:mb-8">
@@ -474,7 +474,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex flex-wrap items-center justify-center w-full lg:w-1/2 px-4">
-                    <div className="w-full xl:w-auto order-0 xl:order-1 -my-10">
+                    <div className="w-full xl:w-auto order-0 xl:order-1 -my-10 flex justify-center">
                       <Player
                         autoplay
                         loop
@@ -667,9 +667,9 @@ export default function Home() {
             Get Involved
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center -mx-10">
+        <div className="flex flex-wrap justify-center">
           <div className="flex flex-wrap w-full lg:w-1/2">
-        {/* blog style card 1 */}
+            {/* blog style card 1 */}
             <div className="group w-full px-3 mb-5">
               <a href="#">
                 <div className="relative h-56 mx-auto rounded overflow-hidden">
