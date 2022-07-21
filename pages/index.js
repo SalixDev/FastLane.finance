@@ -343,7 +343,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>reduce the economic incentive for transaction spam by removing the randomness from the direct vs announced propagation dynamic</span>
+                    <span>Reduce the incentive of transaction spam</span>
                   </li>
                 </ul>
               </div>
@@ -479,7 +479,7 @@ export default function Home() {
                         autoplay
                         loop
                         src="https://assets5.lottiefiles.com/packages/lf20_p8jh9b5k.json"
-                        style={{ height: '400px', width: '400px' }}
+                        style={{ height: '400px', width: 'auto' }}
                       >
                       </Player>
                     </div>
