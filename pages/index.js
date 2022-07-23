@@ -17,7 +17,7 @@ export default function Home() {
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
     <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content=""/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
@@ -98,7 +98,7 @@ export default function Home() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-600 duration-500" href="#">
+            <a className="text-sm text-gray-700 hover:text-gray-600 duration-500" target="_blank" href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140" >
               Documentation
             </a>
           </li>
@@ -110,12 +110,13 @@ export default function Home() {
       <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Discord</a></li> */}
           </li>
         </ul>
-        <a
-          className="hidden lg:block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
-          href="#"
-        >
-          Contact Us
-        </a>
+        <Link href="#contact">
+            <a
+              className="hidden lg:block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+              >
+              Contact Us
+            </a>
+          </Link>
       </nav>
       <div className="bg-gray-50 px-20 radius-for-skewed">
         <div className="container mx-auto px-4">
@@ -131,19 +132,20 @@ export default function Home() {
                 </div>
                 <div className="max-w-sm mx-auto lg:mx-0">
                   <p className="mb-6 text-gray-400 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque efficitur nisl sodales egestas lobortis.
+                  FastLane enables you to standardize transaction propagation protocols. Don't leave it up to chance.
                   </p>
                   <div>
+                    <Link href="#contact">
                     <a
                       className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
-                      href="#"
-                    >
+                      // href="#"
+                      >
                       Get Started
                     </a>
+                      </Link>
                     <Link href='#how-it-works'>
                       <a
-                        className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
+                        className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold border-gray-300 border-2 bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
                         href="#"
                         >
                         How it works
@@ -254,7 +256,7 @@ export default function Home() {
 
     </section>
     {/* STATS */}
-    <section className="pt-5">
+    {/* <section className="pt-5">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-center">
           <div className="mb-8 w-full md:w-1/2 lg:w-1/4">
@@ -283,7 +285,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* FEATURES  */}
     <section>
@@ -293,14 +295,13 @@ export default function Home() {
             <div className="w-full lg:w-1/2 mb-12 lg:mb-0 px-6 mf:py-0 flex justify-center lg:inline-block lg:justify-start">
               <div className="max-w-md lg:mx-auto">
                 <div className="text-purple-600 font-bold text-center lg:text-start">
-                  Dolor sit amet consectutar
+                  Integrate the FastLane
                 </div>
                 <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading text-white text-center lg:text-start">
-                  Build &amp; Launch without problems
+                  Monetize your order flows propagation bottlenecks
                 </h2>
                 <p className="mb-6 text-gray-400 leading-loose text-center lg:text-start">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque efficitur nisl sodales egestas lobortis.
+                  Remove randomness, disincentivize spam, increase validator revenue, and reward efficient searchers.
                 </p>
                 <ul className="text-gray-400 font-bold">
                   <li className="flex mb-4">
@@ -316,7 +317,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Does not censor any transaction</span>
+                    <span>No transaction censoring</span>
                   </li>
                   <li className="flex mb-4">
                     <svg
@@ -331,7 +332,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Incurs no transaction delay beyond the limit of what is already possible.</span>
+                    <span>No transaction delay beyond the limit of what is already possible.</span>
                   </li>
                   <li className="mb-4 flex">
                     <svg
@@ -362,9 +363,8 @@ export default function Home() {
                     Earn From Your Order Flow
                   </h4>
                   <p className="text-gray-400 leading-loose">
-                    Your new &amp; existing order flows will continue to
-                    generate MEV, but without FastLane you're not gaining anything
-                    from it.
+                    Arbitrage opportunities in your order flows will be distributed through randomness. 
+                    Our standardize protocol allows you to monetize value opportunities.  
                   </p>
                 </div>
                 {/* FEATURE CARD 2 */}
@@ -376,7 +376,7 @@ export default function Home() {
                     MEV Protection
                   </h4>
                   <p className="text-gray-400 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Frontrunning and sandwiching transactions are not eligible on the Fast Lane system.
                   </p>
                 </div>
               </div>
@@ -390,7 +390,7 @@ export default function Home() {
                     Incredibly Simple Integration
                   </h4>
                   <p className="text-gray-400 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    One of the easiest integration processes on the market.
                   </p>
                 </div>
                 {/* FEATURE CARD 4 */}
@@ -399,10 +399,10 @@ export default function Home() {
                     <img src='/assets/ui-assets/icons/blockchain-lines.svg' className='h-11 w-11'></img>
                   </span>
                   <h4 className="mb-2 text-2xl font-bold font-heading text-white">
-                    Instant Tx Propagation
+                    Standardizes transaction propagation
                   </h4>
                   <p className="text-gray-400 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Remove randomness from the tx propagation dynamic.
                   </p>
                 </div>
               </div>
@@ -421,13 +421,13 @@ export default function Home() {
               Learn what's possible with FastLane 
             </h2>
             <div>
-              <a
+              {/* <a
                 className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
                 Get Started
-              </a>
-              <a
+              </a> */}
+              <a target="_blank"
                 className="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold bg-gray-900 border-2 border-gray-700 rounded-l-xl rounded-t-xl hover:border-gray-600 transition duration-200 relative z-10"
                 href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140"
               >
@@ -454,8 +454,11 @@ export default function Home() {
                       <h2 className="text-3xl lg:text-4xl font-bold font-heading leading-snug text-center">
                         Integrate with one command line
                       </h2>
+                      <p className="text-gray-500 leading-loose text-center">
+                      No heavy software required. 
+                      </p>
                       <p className="lg:mb-4 md:mb-2  text-gray-500 leading-loose text-center">
-                        When installing or updating BOR from the default BOR repo, integrate the FastLane with only one additional command. 
+                      Simply implement the provided FastLane patch with one additional command line during a BOR update. 
                       </p>
                       <div className="flex flex-wrap justify-center">
                         {/* <div className="mb-8 w-full lg:w-1/2">
@@ -546,8 +549,8 @@ export default function Home() {
                 Join our list of approved validators
               </h3>
               <p className="text-gray-500 leading-loose">
-                Fusce quam tellus, placerat eu metus ut, viverra aliquet purus.
-                Suspendisse potenti. Nulla non nibh feugiat.
+              Participating validators will need to reach out to the FastLane team and be approved for participation.
+    
               </p>
             </div>
             {/* step 2 */}
@@ -570,8 +573,9 @@ export default function Home() {
                 Integrate FastLane with our sentry patch
               </h3>
               <p className="text-gray-500 leading-loose">
-                Fusce quam tellus, placerat eu metus ut, viverra aliquet purus.
-                Suspendisse potenti. Nulla non nibh feugiat.
+              The provided patch can be ran after updating to the most recent BOR version.
+              Integration would require only one additional command line
+              before building.
               </p>
             </div>
             {/* step 3 */}
@@ -594,8 +598,7 @@ export default function Home() {
                 Begin earning from your workflow
               </h3>
               <p className="text-gray-500 leading-loose">
-                Fusce quam tellus, placerat eu metus ut, viverra aliquet purus.
-                Suspendisse potenti. Nulla non nibh feugiat.
+              Participants will begin to receive proceeds from the FastLane auctions.
               </p>
             </div>
           </div>
@@ -661,9 +664,9 @@ export default function Home() {
     <div className="bg-gray-50 radius-for-skewed">
       <div className="container mx-auto px-4">
 
-        <div className="mb-3 text-center">
+        <div id="contact" className="mb-3 text-center">
           <span className="text-purple-600 font-bold">
-            Got any questions? Let's talk about it.
+            Have any questions? Let's talk about it.
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold font-heading">
             Get Involved
@@ -675,7 +678,7 @@ export default function Home() {
 
             {/* blog style card 1 */}
             <div className="group w-full md:px-3 mb-6 h-56">
-              <a href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140">
+              <a target="_blank" href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140">
                 <div className="relative h-full mx-auto rounded overflow-hidden">
                   <img
                     className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
@@ -698,7 +701,7 @@ export default function Home() {
             {/* blog style button 2 */}
             <div className='flex flex-col md:flex-row h-full'>
               <div className="group w-full lg:w-1/2 md:pr-2 md:px-3 mb-6 md:mb-0 h-60 md:h-auto">
-                <a href="https://github.com/Polygon-Fast-Lane/sentry-patch">
+                <a target="_blank" href="https://github.com/Polygon-Fast-Lane/sentry-patch">
                   <div className="relative mx-auto rounded h-full overflow-hidden">
                     <img
                       className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
@@ -720,7 +723,7 @@ export default function Home() {
               </div>
               {/* blog style button 3 */}
               <div className="group w-full lg:w-1/2 h-60 md:h-auto md:pl-2 md:px-3">
-                <a href="https://github.com/maticnetwork/bor/releases">
+                <a target="_blank" href="https://github.com/maticnetwork/bor/releases">
                   <div className="relative mx-auto rounded-lg h-full overflow-hidden">
                     <img
                       className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
@@ -749,7 +752,7 @@ export default function Home() {
             <div className="container mx-auto">
               <div className="flex flex-wrap flex-col">
 
-                <a href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
+                {/* <a target="_blank" href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
                     <div className="p-5 flex flex-wrap bg-white group-hover:bg-purple-100 shadow rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                       <div>
                         <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
@@ -765,9 +768,9 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </a> */}
 
-                  <a href='https://github.com/' id="get-patch" className="mb-6 w-full lg:w-full rounded z-10">
+                  <a target="_blank" href='https://github.com/' id="get-patch" className="mb-6 w-full lg:w-full rounded z-10">
                     <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                       <div>
                         <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
@@ -779,13 +782,13 @@ export default function Home() {
                           Github
                         </h3>
                         <p className="text-gray-500">
-                          2nd Text
+                          For features and to file issues, check out our github.
                         </p>
                       </div>
                     </div>
                   </a>
                   
-                  <a href='https://discord.com/' className="group w-full lg:w-full rounded z-10">
+                  <a target="_blank" href='https://discord.com/' className="group w-full lg:w-full rounded z-10">
                     <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                       <div>
                       <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
@@ -797,7 +800,7 @@ export default function Home() {
                           Discord
                         </h3>
                         <p className="text-gray-500">
-                          Join our social channels and engage with the community  
+                          Join our social channels and engage with our community  
                         </p>
                       </div>
                     </div>
@@ -1112,13 +1115,14 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="mb-5 ml-6 w-full lg:w-1/5">
+            <div className="mb-5 ml-6 w-full lg:w-2/5">
               <p className="text-gray-400 leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                luctus eget justo.
+              The FastLane protocol is designed to reduce transaction spam and improve network health
+               by monetizing propagation bottlenecks in the peer-to-peer layer of the Polygon blockchain
+                and distributing the proceeds to participating validators.
               </p>
             </div>
-            <div className="w-full lg:w-3/6 flex flex-wrap -mx-3 justify-end">
+            <div className="w-full lg:w-1/6 flex flex-wrap -mx-3 justify-end">
               {/* <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold text-gray-50">Github</h5>
                 <p className="text-gray-400 leading-loose">/35sada9asndka</p>
