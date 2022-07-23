@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { Player } from '@lottiefiles/react-lottie-player';
+import Link from 'next/link';
 import Script from 'next/script';
-import TechLinesAnim from './lottie-animation'
+// import styles from '../styles/Home.module.css'
+import { Player } from '@lottiefiles/react-lottie-player';
+import TechLinesAnim from './lottie-animation';
 
 export default function Home() {
   return (
@@ -54,7 +55,7 @@ export default function Home() {
           </button>
         </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-          <li>
+          {/* <li>
             <a className="text-sm text-gray-400 hover:text-gray-600 duration-500" href="#">
               Start
             </a>
@@ -74,7 +75,7 @@ export default function Home() {
                 d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
               />
             </svg>
-          </li>
+          </li> */}
           <li>
             <a className="text-sm text-purple-600 font-bold" href="#">
               About Us
@@ -123,8 +124,8 @@ export default function Home() {
               <div className="w-full text-center lg:text-left">
                 <div className="max-w-md mx-auto lg:mx-0">
                   <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading leading-snug">
-                    <span>Introducing the</span>
-                    <span className="text-purple-600"> Fast Lane </span>
+                    <span>Introducing</span>
+                    <span className="text-purple-600"> FastLane </span>
                     <span>on Polygon</span>
                   </h2>
                 </div>
@@ -140,12 +141,14 @@ export default function Home() {
                     >
                       Get Started
                     </a>
-                    <a
-                      className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
-                      href="#"
-                    >
-                      How it works
-                    </a>
+                    <Link href='#how-it-works'>
+                      <a
+                        className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
+                        href="#"
+                        >
+                        How it works
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -286,16 +289,16 @@ export default function Home() {
     <section>
       <div className="pt-8 bg-gray-900 radius-for-skewed">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap items-center">
-            <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start">
+            <div className="w-full lg:w-1/2 mb-12 lg:mb-0 px-6 mf:py-0 flex justify-center lg:inline-block lg:justify-start">
               <div className="max-w-md lg:mx-auto">
-                <span className="text-purple-600 font-bold">
+                <div className="text-purple-600 font-bold text-center lg:text-start">
                   Dolor sit amet consectutar
-                </span>
-                <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading text-white">
+                </div>
+                <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading text-white text-center lg:text-start">
                   Build &amp; Launch without problems
                 </h2>
-                <p className="mb-6 text-gray-400 leading-loose">
+                <p className="mb-6 text-gray-400 leading-loose text-center lg:text-start">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque efficitur nisl sodales egestas lobortis.
                 </p>
@@ -360,7 +363,7 @@ export default function Home() {
                   </h4>
                   <p className="text-gray-400 leading-loose">
                     Your new &amp; existing order flows will continue to
-                    generate MEV, but without Fast Lane you're not gaining anything
+                    generate MEV, but without FastLane you're not gaining anything
                     from it.
                   </p>
                 </div>
@@ -415,7 +418,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-8 md:mb-8">
             <h2 className="mb-4 text-3xl lg:text-4xl text-gray-50 font-bold">
-              Learn what's possible with Fast Lane 
+              Learn what's possible with FastLane 
             </h2>
             <div>
               <a
@@ -425,8 +428,8 @@ export default function Home() {
                 Get Started
               </a>
               <a
-                className="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold bg-gray-900 border-2 border-gray-700 hover:border-gray-600 rounded-l-xl rounded-t-xl transition duration-200"
-                href="#"
+                className="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold bg-gray-900 border-2 border-gray-700 rounded-l-xl rounded-t-xl hover:border-gray-600 transition duration-200 relative z-10"
+                href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140"
               >
                 Read Documentation
               </a>
@@ -434,7 +437,7 @@ export default function Home() {
           </div>
         </div>
   
-        <div className='absolute opacity-50 right-0 top-0'>
+        <div className='absolute opacity-50 right-0 top-0 hidden md:block'>
           <TechLinesAnim/>
         </div>
 
@@ -446,14 +449,13 @@ export default function Home() {
                   <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
                     <div className="max-w-md">
                       <div className="text-purple-600 font-bold text-center">
-                        Dolor sit amet consectutar
+                        After downloading our patch
                       </div>
                       <h2 className="text-3xl lg:text-4xl font-bold font-heading leading-snug text-center">
-                        Integrate with only one command line
+                        Integrate with one command line
                       </h2>
                       <p className="lg:mb-4 md:mb-2  text-gray-500 leading-loose text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Pellentesque efficitur nisl sodales egestas lobortis.
+                        When installing or updating BOR from the default BOR repo, integrate the FastLane with only one additional command. 
                       </p>
                       <div className="flex flex-wrap justify-center">
                         {/* <div className="mb-8 w-full lg:w-1/2">
@@ -464,12 +466,13 @@ export default function Home() {
                           <h4 className="text-gray-500">Subscribers</h4>
                           <span className="text-3xl lg:text-4xl font-bold">481,095</span>
                         </div> */}
-                                            <a
+                    <Link href="#get-patch">
+                    <a
                       className="inline-block mb-3 lg:mb-3 lg:mr-3 w-full lg:w-auto py-3 lg:px-14 md:w-1/2 leading-loose bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200 flex justify-center"
-                      href="#"
                     >
-                      Get Started
+                      Get Patch
                     </a>
+                    </Link>
                       </div>
                     </div>
                   </div>
@@ -506,7 +509,6 @@ export default function Home() {
                 <polygon fill="currentColor" points="0 0 10 0 10 10" />
               </svg>
             </div>
-
         </div>
       </div>
     </section>
@@ -516,8 +518,8 @@ export default function Home() {
       <div className="pb-14 bg-gray-50 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="mb-16 max-w-md text-center mx-auto">
-            <span className="text-purple-600 font-bold">
-              Launch the Fast Lane
+            <span id="how-it-works" className="text-purple-600 font-bold">
+              Launch the FastLane
             </span>
             <h2 className="text-3xl lg:text-4xl font-bold font-heading">
               with incredibly simple implementation
@@ -541,7 +543,7 @@ export default function Home() {
                 />
               </svg>
               <h3 className="relative text-2xl font-bold">
-                Lorem ipsum dolor sit amet consectutar
+                Join our list of approved validators
               </h3>
               <p className="text-gray-500 leading-loose">
                 Fusce quam tellus, placerat eu metus ut, viverra aliquet purus.
@@ -565,7 +567,7 @@ export default function Home() {
                 />
               </svg>
               <h3 className="relative text-2xl font-bold">
-                Lorem ipsum dolor sit amet consectutar
+                Integrate FastLane with our sentry patch
               </h3>
               <p className="text-gray-500 leading-loose">
                 Fusce quam tellus, placerat eu metus ut, viverra aliquet purus.
@@ -589,7 +591,7 @@ export default function Home() {
                 />
               </svg>
               <h3 className="relative text-2xl font-bold">
-                Lorem ipsum dolor sit amet consectutar
+                Begin earning from your workflow
               </h3>
               <p className="text-gray-500 leading-loose">
                 Fusce quam tellus, placerat eu metus ut, viverra aliquet purus.
@@ -655,10 +657,10 @@ export default function Home() {
 
         {/* Link Buttons */}
       {/* Link buttons blog style */}
-      
-  <section>
-    <div className="py-2 bg-gray-50 radius-for-skewed">
+    <section>
+    <div className="bg-gray-50 radius-for-skewed">
       <div className="container mx-auto px-4">
+
         <div className="mb-3 text-center">
           <span className="text-purple-600 font-bold">
             Got any questions? Let's talk about it.
@@ -667,12 +669,14 @@ export default function Home() {
             Get Involved
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center">
-          <div className="flex flex-wrap w-full lg:w-1/2">
+
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch pb-5">
+          <div className="flex flex-col w-full lg:w-1/2 h-auto md:pr-3">
+
             {/* blog style card 1 */}
-            <div className="group w-full px-3 mb-5">
-              <a href="#">
-                <div className="relative h-56 mx-auto rounded overflow-hidden">
+            <div className="group w-full md:px-3 mb-6 h-56">
+              <a href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140">
+                <div className="relative h-full mx-auto rounded overflow-hidden">
                   <img
                     className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
                     src="/assets/ui-assets/images/one-block-lg.png"
@@ -683,7 +687,7 @@ export default function Home() {
                     <span className="mb-auto py-1 px-3 text-sm bg-purple-600 rounded-l-xl rounded-t-xl text-white uppercase font-bold transition-all group-hover:bg-purple-800">
                         View Documentation
                       </span>
-                      <span className="text-sm text-gray-400 transition-all group-hover:text-purple-400">24 Jan, 2022</span>
+                      <span className="text-sm text-gray-400 transition-all group-hover:text-purple-400">17 May, 2022</span>
                       <p className="text-xl lg:text-2xl text-white font-bold transition-all group-hover:text-purple-600">
                         PFL White Paper
                       </p>
@@ -692,113 +696,116 @@ export default function Home() {
               </a>
             </div>
             {/* blog style button 2 */}
-            <div className="group w-full lg:w-1/2 px-3 mb-5">
-              <a href="#">
-                <div className="relative mx-auto rounded h-96 overflow-hidden">
-                  <img
-                    className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
-                    src="/assets/ui-assets/images/zoomed-in-bc.png"
-                    alt=""
-                  />
-                  <div className="absolute inset-0 bg-gray-900 opacity-75 rounded transition-all group-hover:bg-gray-800" />
-                  <div className="absolute inset-0 p-6 flex flex-col items-start">
-                    <span className="mb-auto py-1 px-3 text-sm bg-purple-600 rounded-l-xl rounded-t-xl text-white uppercase font-bold transition-all group-hover:bg-purple-800">
-                        Button 2
-                      </span>
-                      <span className="text-sm text-gray-400 group-hover:text-purple-400">24 Jan, 2021</span>
-                      <p className="text-xl lg:text-2xl text-white font-bold transition-all group-hover:text-purple-600">
-                        Button 2 text
-                      </p>
+            <div className='flex flex-col md:flex-row h-full'>
+              <div className="group w-full lg:w-1/2 md:pr-2 md:px-3 mb-6 md:mb-0 h-60 md:h-auto">
+                <a href="https://github.com/Polygon-Fast-Lane/sentry-patch">
+                  <div className="relative mx-auto rounded h-full overflow-hidden">
+                    <img
+                      className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
+                      src="/assets/ui-assets/images/zoomed-in-bc.png"
+                      alt=""
+                    />
+                    <div className="absolute inset-0 bg-gray-900 opacity-75 rounded transition-all group-hover:bg-gray-800" />
+                    <div className="absolute inset-0 p-6 flex flex-col items-start">
+                      <span className="mb-auto py-1 px-3 text-sm bg-purple-600 rounded-l-xl rounded-t-xl text-white uppercase font-bold transition-all group-hover:bg-purple-800">
+                          Get Patch
+                        </span>
+                        {/* <span className="text-sm text-gray-400 group-hover:text-purple-400">17 May, 2022</span> */}
+                        <p className="text-xl lg:text-2xl text-white font-bold transition-all group-hover:text-purple-600">
+                          Latest FastLane Patch
+                        </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            {/* blog style button 3 */}
-            <div className="group w-full lg:w-1/2 px-3 mb-5 ">
-              <a href="#">
-                <div className="relative mx-auto rounded-lg h-96 overflow-hidden">
-                  <img
-                    className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
-                    src="/assets/ui-assets/images/zoomed-in-bc.png"
-                    alt=""
-                  />
-                  <div className="absolute inset-0 bg-gray-900 opacity-75 rounded group-hover:bg-gray-800" />
-                  <div className="absolute inset-0 p-6 flex flex-col items-start">
-                    <span className="mb-auto py-1 px-3 text-sm bg-purple-600 rounded-l-xl rounded-t-xl text-white uppercase font-bold group-hover:bg-purple-800">
-                        Button 3
-                      </span>
-                      <span className="text-sm text-gray-400 group-hover:text-purple-400">24 Jan, 2022</span>
-                      <p className="text-xl lg:text-2xl text-white font-bold group-hover:text-purple-600">
-                        Button 3 text
-                      </p>
+                </a>
+              </div>
+              {/* blog style button 3 */}
+              <div className="group w-full lg:w-1/2 h-60 md:h-auto md:pl-2 md:px-3">
+                <a href="https://github.com/maticnetwork/bor/releases">
+                  <div className="relative mx-auto rounded-lg h-full overflow-hidden">
+                    <img
+                      className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
+                      src="/assets/ui-assets/images/zoomed-in-bc.png"
+                      alt=""
+                    />
+                    <div className="absolute inset-0 bg-gray-900 opacity-75 rounded group-hover:bg-gray-800" />
+                    <div className="absolute inset-0 p-6 flex flex-col items-start">
+                      <span className="mb-auto py-1 px-3 text-sm bg-purple-600 rounded-l-xl rounded-t-xl text-white uppercase font-bold group-hover:bg-purple-800">
+                          View Repo
+                        </span>
+                        {/* <span className="text-sm text-gray-400 group-hover:text-purple-400">24 Jan, 2022</span> */}
+                        <p className="text-xl lg:text-2xl text-white font-bold group-hover:text-purple-600">
+                          Latest Bor release
+                        </p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
 
-      {/* Link Buttons simple style */}
-    <div className="py-0 bg-gray-50 radius-for-skewed">
-      <div className="container mx-auto px-0">
-        <div className="flex flex-wrap flex-col">
 
-          <a href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
-              <div className="p-5 flex flex-wrap bg-white group-hover:bg-purple-100 shadow rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
-                <div>
-                  <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
-                    <img src="/assets/ui-assets/logos/social/Twitter-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10 " ></img>
-                  </span>
-                </div>
-                <div className="w-full lg:w-2/3">
-                  <h3 className="mb-2 text-2xl font-bold font-heading">
-                    Twitter
-                  </h3>
-                  <p className="text-gray-500">
-                    1st text
-                  </p>
-                </div>
-              </div>
-            </a>
+          {/* Link Buttons simple style */}
+          <div className="radius-for-skewed w-full md:w-1/2 lg:w-1/4 pt-6 md:pt-0">
+            <div className="container mx-auto">
+              <div className="flex flex-wrap flex-col">
 
-            <a href='https://github.com/' className="mb-6 w-full lg:w-full rounded z-10">
-              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
-                <div>
-                  <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
-                    <img src="/assets/ui-assets/logos/social/Github-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
-                  </span>
-                </div>
-                <div className="w-full lg:w-2/3">
-                  <h3 className="mb-2 text-2xl font-bold font-heading">
-                    Github
-                  </h3>
-                  <p className="text-gray-500">
-                    2nd Text
-                  </p>
-                </div>
-              </div>
-            </a>
-            
-            <a href='https://discord.com/' className="group mb-6 w-full lg:w-full rounded z-10">
-              <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
-                <div>
-                <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
-                    <img src="/assets/ui-assets/logos/social/Discord-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
-                  </span>
-                </div>
-                <div className="w-full lg:w-2/3">
-                  <h3 className="mb-2 text-2xl font-bold font-heading">
-                    Discord
-                  </h3>
-                  <p className="text-gray-500">
-                    Join our discord
-                  </p>
-                </div>
-              </div>
-            </a>
+                <a href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
+                    <div className="p-5 flex flex-wrap bg-white group-hover:bg-purple-100 shadow rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
+                      <div>
+                        <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
+                          <img src="/assets/ui-assets/logos/social/Twitter-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10 " ></img>
+                        </span>
+                      </div>
+                      <div className="w-full lg:w-2/3">
+                        <h3 className="text-2xl font-bold font-heading">
+                          Twitter
+                        </h3>
+                        <p className="text-gray-500">
+                          1st text
+                        </p>
+                      </div>
+                    </div>
+                  </a>
 
-        </div>
-      </div>
-    </div>
+                  <a href='https://github.com/' id="get-patch" className="mb-6 w-full lg:w-full rounded z-10">
+                    <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
+                      <div>
+                        <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
+                          <img src="/assets/ui-assets/logos/social/Github-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
+                        </span>
+                      </div>
+                      <div className="w-full lg:w-2/3">
+                        <h3 className="text-2xl font-bold font-heading">
+                          Github
+                        </h3>
+                        <p className="text-gray-500">
+                          2nd Text
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <a href='https://discord.com/' className="group w-full lg:w-full rounded z-10">
+                    <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
+                      <div>
+                      <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
+                          <img src="/assets/ui-assets/logos/social/Discord-Logo-Black.svg" className="h-8 w-8 md:w-10 md:h-10" ></img>
+                        </span>
+                      </div>
+                      <div className="w-full">
+                        <h3 className="text-2xl font-bold font-heading">
+                          Discord
+                        </h3>
+                        <p className="text-gray-500">
+                          Join our social channels and engage with the community  
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1112,12 +1119,12 @@ export default function Home() {
               </p>
             </div>
             <div className="w-full lg:w-3/6 flex flex-wrap -mx-3 justify-end">
-              <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
+              {/* <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold text-gray-50">Github</h5>
                 <p className="text-gray-400 leading-loose">/35sada9asndka</p>
-              </div>
+              </div> */}
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">
-                <h5 className="mb-4 font-bold text-gray-50">Contacts</h5>
+                <h5 className="mb-4 font-bold text-gray-50">Contact</h5>
                 <p className="text-gray-400">hello@fastlane.finance</p>
               </div>
             </div>

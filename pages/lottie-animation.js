@@ -11,7 +11,7 @@ const LottieScrollSection = dynamic(
 export default function TechLinesAnim() {
   return (
     <LottieScrollSection 
-    height={1900} 
+    height={1800} 
     animation={TechLines} 
     frames={[0, 69]} 
     />
