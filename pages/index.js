@@ -98,7 +98,7 @@ export default function Home() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-700 hover:text-gray-600 duration-500" target="_blank" href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140" >
+            <a className="text-sm text-gray-700 hover:text-gray-600 duration-500" target="_blank" rel="noreferrer" href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140" >
               Documentation
             </a>
           </li>
@@ -427,7 +427,7 @@ export default function Home() {
               >
                 Get Started
               </a> */}
-              <a target="_blank"
+              <a target="_blank" rel="noreferrer"
                 className="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold bg-gray-900 border-2 border-gray-700 rounded-l-xl rounded-t-xl hover:border-gray-600 transition duration-200 relative z-10"
                 href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140"
               >
@@ -678,7 +678,7 @@ export default function Home() {
 
             {/* blog style card 1 */}
             <div className="group w-full md:px-3 mb-6 h-56">
-              <a target="_blank" href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140">
+              <a target="_blank" rel="noreferrer" href="https://medium.com/@thoggy/polygon-fast-lane-rough-draft-aaa6a7c0b140">
                 <div className="relative h-full mx-auto rounded overflow-hidden">
                   <img
                     className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
@@ -701,7 +701,7 @@ export default function Home() {
             {/* blog style button 2 */}
             <div className='flex flex-col md:flex-row h-full'>
               <div className="group w-full lg:w-1/2 md:pr-2 md:px-3 mb-6 md:mb-0 h-60 md:h-auto">
-                <a target="_blank" href="https://github.com/Polygon-Fast-Lane/sentry-patch">
+                <a target="_blank" rel="noreferrer" href="https://github.com/Polygon-Fast-Lane/sentry-patch">
                   <div className="relative mx-auto rounded h-full overflow-hidden">
                     <img
                       className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
@@ -723,7 +723,7 @@ export default function Home() {
               </div>
               {/* blog style button 3 */}
               <div className="group w-full lg:w-1/2 h-60 md:h-auto md:pl-2 md:px-3">
-                <a target="_blank" href="https://github.com/maticnetwork/bor/releases">
+                <a target="_blank" rel="noreferrer" href="https://github.com/maticnetwork/bor/releases">
                   <div className="relative mx-auto rounded-lg h-full overflow-hidden">
                     <img
                       className="relative h-full w-full rounded object-cover transform transition-all duration-500 group-hover:scale-110"
@@ -752,7 +752,7 @@ export default function Home() {
             <div className="container mx-auto">
               <div className="flex flex-wrap flex-col">
 
-                {/* <a target="_blank" href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
+                {/* <a target="_blank" rel="noreferrer" href='https://twitter.com/' className="group mb-6 w-full lg:w-full rounded z-10">
                     <div className="p-5 flex flex-wrap bg-white group-hover:bg-purple-100 shadow rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                       <div>
                         <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-yellow-100">
@@ -770,7 +770,7 @@ export default function Home() {
                     </div>
                   </a> */}
 
-                  <a target="_blank" href='https://github.com/' id="get-patch" className="mb-6 w-full lg:w-full rounded z-10">
+                  <a target="_blank" rel="noreferrer" href='https://github.com/' id="get-patch" className="mb-6 w-full lg:w-full rounded z-10">
                     <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                       <div>
                         <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-pink-100">
@@ -788,7 +788,7 @@ export default function Home() {
                     </div>
                   </a>
                   
-                  <a target="_blank" href='https://discord.com/' className="group w-full lg:w-full rounded z-10">
+                  <a target="_blank" rel="noreferrer" href='https://discord.com/' className="group w-full lg:w-full rounded z-10">
                     <div className="p-5 flex flex-wrap bg-white hover:bg-purple-100 shadow  rounded-l-xl rounded-t-xl hover:rounded-3xl duration-700">
                       <div>
                       <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-l-xl rounded-t-xl bg-blue-100">
